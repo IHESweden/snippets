@@ -1,0 +1,65 @@
+snippet new_script
+	# Header ------------------------------------------------------------
+		# Script Name:
+		# Author(s) (year): 
+		# Project:
+		# Date created: `r paste(Sys.Date())`
+		# Purpose of program:		
+		#
+		# Inputs needed:
+		#
+		# Outputs:
+		#
+		# Notes: Ctrl + Shift + O for outline
+		#
+
+
+
+	# Libraries ---------------------------------------------------------------
+		packages <- c("")
+		lapply(packages, function(x) {if (!require(x, character.only=T)) {install.packages(x);require(x)}})
+
+
+	# Working Directories -------------------------------------------------------
+	  
+		# Directory for data sets
+		wd.data <- ""
+		# Directory for where to save R-script
+		wd.scripts <- ""
+		# Directory for printing tables and graphs
+		wd.prints <- ""
+		
+		
+	# Functions ---------------------------------------------------------------
+		se <- function(x, na.rm=FALSE) {
+			if (na.rm) x <- na.omit(x)
+			sqrt(var(x)/length(x))
+		}
+
+	# Variables & Options ---------------------------------------------------------------
+		options(scipen=999)
+		options(encoding = "UTF-8")
+	
+	  c_IHE_backg <- "#BBD2DC"
+		c_IHE_pal <- c("#30658C","#ECA55D","#9D1C30","#071C2C","#7DAED3","#0033FF",
+									"#3366FF","#660099","#DB8CF0","#996633","#CCCC00","#F8F700",
+									"#FFFDAB","#429457","#7AC481","#006b6b","#009999","#AC0000",
+									"#E20000")
+	
+	# Data Cleaning  ---------------------------------------------------------------
+	setwd(wd.data)
+	
+	# Statistical analysis ---------------------------------------------------------------
+	
+	
+	# Tables ---------------------------------------------------------------
+	
+	
+	# Graphs ---------------------------------------------------------------
+	
+	
+	# Supplemental material ---------------------------------------------------------------
+	
+	
+	# Printings ---------------------------------------------------------------
+	setwd(wd.prints)
