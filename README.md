@@ -3,6 +3,7 @@
 Requires installation of the snippr package, which may in turn requires installation of Devtools
 
 devtools::install_github("dgrtwo/snippr")
+
 library(snippr)
 
 You can then download and install the strucutre snippet with the command
